@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WealthUpp - Best App for SIP Investment & Daily Mutual Fund Investing</title>
+<meta name="description" content="WealthUpp is the best app for SIP investment and daily mutual fund investing. Start your daily SIP with AI-powered recommendations, zero commission, and smart portfolio tracking.">
+<meta name="keywords" content="SIP investment app, daily SIP mutual fund, best mutual fund app, AI powered investment, daily investing platform, mutual fund SIP, wealth building app, zero commission SIP">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wealthupp.space-z.ai/">
+<meta property="og:title" content="WealthUpp - Best App for SIP Investment & Daily Mutual Fund Investing">
+<meta property="og:description" content="Start your daily SIP with AI-powered recommendations, zero commission, and smart portfolio tracking.">
+<meta property="og:url" content="https://wealthupp.space-z.ai/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://wealthupp.com/assets/logo_dark.png.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://wealthupp.com/assets/logo_dark.png.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f172a;--bg2:#1e293b;--bg3:#334155;--txt:#94a3b8;--txt2:#cbd5e1;--wht:#fff;--amb:#f59e0b;--amb2:#fbbf24;--amb3:#d97706;--grn:#10b981;--blu:#3b82f6;--pur:#8b5cf6;--rad:16px;--font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font);background:var(--bg);color:var(--txt);line-height:1.7;overflow-x:hidden}
+a{color:var(--amb);text-decoration:none;transition:color .3s}
+a:hover{color:var(--amb2)}
+img{max-width:100%;height:auto}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* Buttons */
+.btn{display:inline-block;padding:14px 32px;border-radius:10px;font-weight:700;font-size:1rem;transition:all .3s;cursor:pointer;border:none;text-align:center;font-family:var(--font)}
+.btn-p{background:linear-gradient(135deg,var(--amb),var(--amb3));color:var(--bg);box-shadow:0 4px 20px rgba(245,158,11,.35)}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(245,158,11,.45);color:var(--bg)}
+.btn-o{border:2px solid var(--amb);color:var(--amb);background:0 0}
+.btn-o:hover{background:var(--amb);color:var(--bg);transform:translateY(-3px)}
+.btn-sm{padding:8px 20px;font-size:.9rem;border-radius:8px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(15,23,42,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(245,158,11,.08)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nav-logo img{height:36px;width:auto}
+.nav-ck{display:none}
+.nav-btn{display:none;flex-direction:column;gap:5px;background:0 0;border:none;cursor:pointer;padding:5px}
+.nav-btn span{display:block;width:24px;height:2px;background:var(--wht);transition:all .3s;border-radius:2px}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{color:var(--txt2);font-size:.93rem;font-weight:500;transition:color .3s}
+.nav-links a:hover{color:var(--amb)}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:70px;overflow:hidden;background:linear-gradient(160deg,var(--bg) 0%,#0a0f1a 40%,var(--bg2) 100%)}
+.hero-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);animation:orbPulse 8s ease-in-out infinite}
+.orb1{width:500px;height:500px;background:var(--amb);top:-120px;right:-80px;opacity:.12}
+.orb2{width:400px;height:400px;background:var(--blu);bottom:-80px;left:-80px;opacity:.1;animation-delay:3s}
+.orb3{width:250px;height:250px;background:var(--amb);top:50%;left:45%;opacity:.06;animation-delay:5s}
+@keyframes orbPulse{0%,100%{opacity:.1;transform:scale(1)}50%{opacity:.18;transform:scale(1.08)}}
+.hero-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1;padding:40px 0}
+.badge{display:inline-block;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);color:var(--amb);padding:8px 22px;border-radius:50px;font-size:.82rem;font-weight:600;letter-spacing:.6px;text-transform:uppercase;margin-bottom:24px}
+.h1{font-size:3.6rem;font-weight:900;color:var(--wht);line-height:1.08;margin-bottom:24px}
+.h1 em{font-style:normal;background:linear-gradient(135deg,var(--amb),var(--amb2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1.12rem;color:var(--txt);margin-bottom:36px;line-height:1.8;max-width:520px}
+.hero-cta{display:flex;gap:16px;margin-bottom:40px;flex-wrap:wrap}
+.hero-trust{display:flex;align-items:center;gap:14px}
+.avatars{display:flex}
+.av{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:700;font-size:.85rem;border:2px solid var(--bg);margin-left:-8px}
+.av:first-child{margin-left:0}
+.hero-trust p{font-size:.9rem;color:var(--txt)}
+.hero-trust strong{color:var(--amb)}
+
+/* Phone */
+.phone-wrap{display:flex;justify-content:center;perspective:800px}
+.phone{width:280px;background:var(--bg2);border-radius:32px;padding:12px;box-shadow:0 30px 70px rgba(0,0,0,.5),0 0 50px rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.18);animation:phoneFloat 6s ease-in-out infinite}
+@keyframes phoneFloat{0%,100%{transform:translateY(0) rotateX(2deg)}50%{transform:translateY(-18px) rotateX(-2deg)}}
+.screen{background:var(--bg);border-radius:22px;padding:20px 16px;min-height:420px}
+.app-hd{display:flex;align-items:center;gap:8px;margin-bottom:20px;color:var(--wht);font-weight:700;font-size:.95rem}
+.app-ico{width:28px;height:28px;background:linear-gradient(135deg,var(--amb),var(--amb3));border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:900;font-size:.85rem}
+.app-lbl{display:block;font-size:.72rem;color:var(--txt);margin-bottom:4px}
+.app-amt{display:block;font-size:1.8rem;font-weight:800;color:var(--wht)}
+.app-chg{display:inline-block;color:var(--grn);font-size:.8rem;font-weight:600}
+.sip-box{background:rgba(245,158,11,.08);border-radius:10px;padding:12px;margin-bottom:16px}
+.sip-amt{display:block;font-size:1.1rem;font-weight:700;color:var(--amb)}
+.chart-area{margin-bottom:16px}
+.chart-area svg{width:100%;height:50px}
+.funds{display:flex;flex-direction:column;gap:8px}
+.fund{display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--txt2)}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
+/* Stats */
+.stats{padding:60px 0;background:var(--bg2);border-top:1px solid rgba(245,158,11,.08);border-bottom:1px solid rgba(245,158,11,.08)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.stat{text-align:center;padding:24px}
+.stat-n{font-size:2.8rem;font-weight:900;color:var(--amb)}
+.stat-s{font-size:1.4rem;font-weight:700;color:var(--amb2)}
+.stat-l{display:block;margin-top:8px;color:var(--txt);font-size:.95rem}
+
+/* Section common */
+.tag{display:inline-block;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);color:var(--amb);padding:6px 18px;border-radius:50px;font-size:.78rem;font-weight:600;letter-spacing:.6px;text-transform:uppercase;margin-bottom:16px}
+.h2{font-size:2.4rem;font-weight:800;color:var(--wht);margin-bottom:16px;line-height:1.2}
+.sub{font-size:1.08rem;color:var(--txt);max-width:600px;margin:0 auto;line-height:1.7}
+.txt{font-size:1.02rem;color:var(--txt);line-height:1.8;margin-bottom:16px}
+.sec-hd{text-align:center;margin-bottom:60px}
+
+/* About */
+.about{padding:100px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-hl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.hl{display:flex;align-items:center;gap:10px;color:var(--txt2);font-size:.93rem;font-weight:500}
+.hl-ic{color:var(--amb);font-weight:700;font-size:1.1rem}
+.about-vis{display:flex;justify-content:center;align-items:center;min-height:380px;position:relative}
+.card-stack{position:relative;width:300px;height:300px}
+.fc{position:absolute;background:var(--bg2);border:1px solid rgba(245,158,11,.18);border-radius:var(--rad);padding:20px;display:flex;align-items:center;gap:14px;box-shadow:0 12px 35px rgba(0,0,0,.3)}
+.fc1{top:0;left:0;animation:fcFloat 4s ease-in-out infinite}
+.fc2{top:120px;right:0;animation:fcFloat 5s ease-in-out infinite 1s}
+.fc3{bottom:0;left:30px;animation:fcFloat 4.5s ease-in-out infinite .5s}
+@keyframes fcFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.fc-icon{font-size:2rem}
+.fc-t{font-size:.78rem;color:var(--txt);margin-bottom:2px}
+.fc-v{font-size:1.3rem;font-weight:700;color:var(--wht)}
+
+/* Features */
+.features{padding:100px 0;background:var(--bg2)}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.feat{background:var(--bg);border:1px solid rgba(245,158,11,.08);border-radius:var(--rad);padding:32px;transition:all .3s}
+.feat:hover{border-color:rgba(245,158,11,.3);transform:translateY(-6px);box-shadow:0 18px 45px rgba(0,0,0,.35)}
+.feat-ic{font-size:2.5rem;margin-bottom:20px}
+.feat h3{font-size:1.18rem;font-weight:700;color:var(--wht);margin-bottom:12px}
+.feat p{font-size:.93rem;color:var(--txt);line-height:1.7}
+
+/* How */
+.how{padding:100px 0}
+.steps{display:flex;align-items:flex-start;justify-content:center;gap:20px;flex-wrap:wrap}
+.step{background:var(--bg2);border:1px solid rgba(245,158,11,.12);border-radius:var(--rad);padding:36px 28px;text-align:center;max-width:300px;flex:1;min-width:240px}
+.step-n{width:48px;height:48px;background:linear-gradient(135deg,var(--amb),var(--amb3));border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:800;font-size:1.2rem;margin:0 auto 20px}
+.step-ic{font-size:2.5rem;margin-bottom:16px}
+.step h3{font-size:1.12rem;font-weight:700;color:var(--wht);margin-bottom:12px}
+.step p{font-size:.92rem;color:var(--txt);line-height:1.7}
+.conn{flex-shrink:0;margin-top:80px}
+
+/* Benefits */
+.benefits{padding:100px 0;background:var(--bg2)}
+.ben-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.ben-list{margin-top:30px}
+.ben-item{display:flex;gap:16px;margin-bottom:24px}
+.ben-ic{width:36px;height:36px;min-width:36px;background:rgba(245,158,11,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--amb);font-weight:700;font-size:1rem}
+.ben-item h4{font-size:1.02rem;font-weight:700;color:var(--wht);margin-bottom:6px}
+.ben-item p{font-size:.92rem;color:var(--txt);line-height:1.6}
+.ben-vis{display:flex;justify-content:center}
+.cmp{display:flex;gap:24px}
+.cmp-card{background:var(--bg);border-radius:var(--rad);padding:28px;text-align:center;width:200px;border:1px solid rgba(245,158,11,.1)}
+.cmp-card.m{opacity:.7}
+.cmp-card.d{border-color:rgba(245,158,11,.3);box-shadow:0 10px 30px rgba(245,158,11,.08)}
+.cmp-card h4{font-size:.93rem;color:var(--txt2);margin-bottom:16px;font-weight:600}
+.cmp-chart{height:80px;position:relative;margin-bottom:12px}
+.cmp-chart .bar{position:absolute;bottom:0;width:8px;background:var(--bg3);border-radius:4px 4px 0 0;transform:translateX(-50%)}
+.cmp-card.d .bar{background:var(--amb)}
+.cmp-card p{font-size:.78rem;color:var(--txt);margin-bottom:8px}
+.cmp-amt{font-size:1.2rem;font-weight:700;color:var(--amb)}
+
+/* Testimonials */
+.testi{padding:100px 0}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.tcard{background:var(--bg2);border:1px solid rgba(245,158,11,.08);border-radius:var(--rad);padding:32px;transition:all .3s}
+.tcard:hover{border-color:rgba(245,158,11,.25);transform:translateY(-4px)}
+.stars{color:var(--amb);font-size:1.1rem;margin-bottom:16px;letter-spacing:2px}
+.tcard>p{font-size:.93rem;color:var(--txt2);line-height:1.7;margin-bottom:24px;font-style:italic}
+.tauth{display:flex;align-items:center;gap:12px}
+.tav{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:700;font-size:1rem}
+.tauth strong{display:block;color:var(--wht);font-size:.93rem}
+.tauth span{font-size:.78rem;color:var(--txt)}
+
+/* CTA */
+.cta{padding:80px 0;background:linear-gradient(135deg,rgba(245,158,11,.06),rgba(245,158,11,.015));border-top:1px solid rgba(245,158,11,.08);border-bottom:1px solid rgba(245,158,11,.08)}
+.cta-in{text-align:center;max-width:650px;margin:0 auto}
+.cta-in h2{font-size:2.4rem;font-weight:800;color:var(--wht);margin-bottom:16px}
+.cta-in>p{font-size:1.08rem;color:var(--txt);margin-bottom:32px;line-height:1.7}
+.cta-btns{margin-bottom:24px}
+.cta-apps{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.cta-apps span{font-size:.88rem;color:var(--txt)}
+.app-lk{color:var(--amb);font-weight:600;font-size:.9rem}
+.app-lk:hover{color:var(--amb2)}
+
+/* Contact */
+.contact{padding:80px 0}
+.con-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.con-item{display:flex;gap:16px;margin-bottom:28px}
+.con-ic{font-size:1.5rem;min-width:40px}
+.con-item h4{font-size:1rem;font-weight:700;color:var(--wht);margin-bottom:4px}
+.con-item p{font-size:.92rem;color:var(--txt);line-height:1.6}
+.con-item a{color:var(--txt)}
+.con-item a:hover{color:var(--amb)}
+.con-soc h4{font-size:1.1rem;font-weight:700;color:var(--wht);margin-bottom:20px}
+.soc-links{display:flex;gap:14px}
+.soc-lk{width:48px;height:48px;border-radius:12px;background:var(--bg2);border:1px solid rgba(245,158,11,.12);display:flex;align-items:center;justify-content:center;color:var(--amb);font-weight:700;font-size:1.1rem;transition:all .3s}
+.soc-lk:hover{background:rgba(245,158,11,.08);border-color:var(--amb);transform:translateY(-3px);color:var(--amb)}
+
+/* Footer */
+.footer{padding:60px 0 30px;background:var(--bg2);border-top:1px solid rgba(245,158,11,.08)}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.ft-brand img{margin-bottom:16px}
+.ft-brand p{font-size:.88rem;color:var(--txt);line-height:1.7}
+.ft-links h4{font-size:1rem;font-weight:700;color:var(--wht);margin-bottom:16px}
+.ft-links ul{list-style:none}
+.ft-links li{margin-bottom:10px}
+.ft-links a{font-size:.88rem;color:var(--txt);transition:color .3s}
+.ft-links a:hover{color:var(--amb)}
+.ft-btm{border-top:1px solid rgba(245,158,11,.08);padding-top:24px;text-align:center}
+.ft-btm p{font-size:.83rem;color:var(--txt);margin-bottom:4px}
+.ft-discl{font-size:.78rem!important;color:var(--bg3)!important;margin-top:8px}
+
+/* Responsive */
+@media(max-width:1024px){
+.hero-wrap{grid-template-columns:1fr;text-align:center;gap:40px}
+.hero-sub{max-width:100%;margin:0 auto 36px}
+.hero-cta{justify-content:center}
+.hero-trust{justify-content:center}
+.about-grid,.ben-grid{grid-template-columns:1fr;gap:40px}
+.about-vis{order:-1}
+.feat-grid{grid-template-columns:repeat(2,1fr)}
+.testi-grid{grid-template-columns:repeat(2,1fr)}
+.ft-grid{grid-template-columns:repeat(2,1fr)}
+.stats-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+.nav-btn{display:flex}
+.nav-links{position:fixed;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;padding:30px;gap:20px;border-bottom:1px solid rgba(245,158,11,.08);max-height:0;overflow:hidden;opacity:0;transition:all .3s}
+.nav-ck:checked~.nav-links{max-height:500px;opacity:1}
+.nav-ck:checked~.nav-btn span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-ck:checked~.nav-btn span:nth-child(2){opacity:0}
+.nav-ck:checked~.nav-btn span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.h1{font-size:2.4rem}
+.h2{font-size:1.9rem}
+.feat-grid,.testi-grid{grid-template-columns:1fr}
+.steps{flex-direction:column;align-items:center}
+.conn{transform:rotate(90deg);margin-top:0}
+.con-grid{grid-template-columns:1fr}
+.cmp{flex-direction:column;align-items:center}
+.ft-grid{grid-template-columns:1fr;gap:30px}
+.about-hl{grid-template-columns:1fr}
+.cta-in h2{font-size:1.9rem}
+}
+@media(max-width:480px){
+.h1{font-size:2rem}
+.btn{padding:12px 24px;font-size:.95rem}
+.hero-cta{flex-direction:column;align-items:center}
+.stats-grid{grid-template-columns:1fr 1fr;gap:16px}
+.stat-n{font-size:2rem}
+.phone{width:240px}
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+<div class="container nav-inner">
+<a href="https://wealthupp.com/" class="nav-logo" target="_blank" rel="noopener"><img src="https://wealthupp.com/assets/logo_dark.png.webp" alt="WealthUpp Logo" width="160" height="40"></a>
+<input type="checkbox" id="nav-ck" class="nav-ck">
+<label for="nav-ck" class="nav-btn"><span></span><span></span><span></span></label>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#how">How It Works</a></li>
+<li><a href="#benefits">Benefits</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="https://wealthupp.com/daily-sip" class="btn btn-p btn-sm" target="_blank" rel="noopener">Start Daily SIP</a></li>
+</ul>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<div class="hero-bg"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div></div>
+<div class="container hero-wrap">
+<div>
+<span class="badge">AI-Powered Daily SIP</span>
+<h1 class="h1">Build Wealth<br><em>Every Single Day</em></h1>
+<p class="hero-sub">India's smartest daily SIP mutual fund investment platform. Let AI manage your investments with zero commission, automated daily investing, and intelligent portfolio rebalancing.</p>
+<div class="hero-cta">
+<a href="https://wealthupp.com/daily-sip" class="btn btn-p" target="_blank" rel="noopener">Start Investing Today</a>
+<a href="#how" class="btn btn-o">Learn How</a>
+</div>
+<div class="hero-trust">
+<div class="avatars">
+<div class="av" style="background:#f59e0b">R</div>
+<div class="av" style="background:#3b82f6">P</div>
+<div class="av" style="background:#10b981">S</div>
+<div class="av" style="background:#8b5cf6">A</div>
+</div>
+<p>Trusted by <strong>50,000+</strong> investors across India</p>
+</div>
+</div>
+<div class="phone-wrap">
+<div class="phone">
+<div class="screen">
+<div class="app-hd"><span class="app-ico">W</span><span>WealthUpp</span></div>
+<div style="margin-bottom:16px">
+<span class="app-lbl">Portfolio Value</span>
+<span class="app-amt">&#8377;2,45,680</span>
+<span class="app-chg">+12.4% &#8593;</span>
+</div>
+<div class="sip-box">
+<span class="app-lbl">Daily SIP Active</span>
+<span class="sip-amt">&#8377;500/day</span>
+</div>
+<div class="chart-area">
+<svg viewBox="0 0 200 60"><defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f59e0b" stop-opacity=".3"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></linearGradient></defs><polyline points="0,50 20,45 40,48 60,35 80,38 100,25 120,28 140,15 160,20 180,10 200,5" fill="none" stroke="#f59e0b" stroke-width="2"/><polyline points="0,50 20,45 40,48 60,35 80,38 100,25 120,28 140,15 160,20 180,10 200,5 200,60 0,60" fill="url(#cg)"/></svg>
+</div>
+<div class="funds">
+<div class="fund"><span class="dot" style="background:#f59e0b"></span> Nifty 50 Fund</div>
+<div class="fund"><span class="dot" style="background:#3b82f6"></span> Mid Cap Fund</div>
+<div class="fund"><span class="dot" style="background:#10b981"></span> Debt Fund</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+<div class="container">
+<div class="stats-grid">
+<div class="stat"><div class="stat-n">50,000<span class="stat-s">+</span></div><span class="stat-l">Active Investors</span></div>
+<div class="stat"><div class="stat-n">500<span class="stat-s">Cr+</span></div><span class="stat-l">Assets Managed</span></div>
+<div class="stat"><div class="stat-n">15<span class="stat-s">+</span></div><span class="stat-l">Fund Houses</span></div>
+<div class="stat"><div class="stat-n">0<span class="stat-s">%</span></div><span class="stat-l">Commission</span></div>
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+<div class="container">
+<div class="about-grid">
+<div>
+<span class="tag">About WealthUpp</span>
+<h2 class="h2">India's Most Trusted Daily SIP Investment Platform</h2>
+<p class="txt">WealthUpp is revolutionizing the way Indians invest in mutual funds. Founded by <strong>Ram Tulluri</strong>, our AI-powered daily SIP mutual fund investment platform makes wealth building effortless, automated, and accessible to everyone. Instead of traditional monthly SIPs, WealthUpp enables daily micro-investments that leverage rupee cost averaging more effectively, reducing market timing risk and maximizing long-term returns.</p>
+<p class="txt">Our platform uses advanced artificial intelligence to analyze market conditions, assess your risk profile, and recommend the best mutual fund portfolios tailored to your financial goals. Whether you are a first-time investor or a seasoned professional, WealthUpp's smart algorithms ensure your money works harder for you every single day. With zero commission fees, bank-grade security, and SEBI-registered compliance, we make daily investing simple, safe, and rewarding.</p>
+<div class="about-hl">
+<div class="hl"><span class="hl-ic">&#10003;</span> SEBI Registered Platform</div>
+<div class="hl"><span class="hl-ic">&#10003;</span> Bank-Grade Encryption</div>
+<div class="hl"><span class="hl-ic">&#10003;</span> Zero Commission Investing</div>
+<div class="hl"><span class="hl-ic">&#10003;</span> AI-Driven Recommendations</div>
+</div>
+</div>
+<div class="about-vis">
+<div class="card-stack">
+<div class="fc fc1"><div class="fc-icon">&#128200;</div><div><div class="fc-t">Daily Returns</div><div class="fc-v">+0.12%</div></div></div>
+<div class="fc fc2"><div class="fc-icon">&#9889;</div><div><div class="fc-t">Auto SIP</div><div class="fc-v">Active</div></div></div>
+<div class="fc fc3"><div class="fc-icon">&#127775;</div><div><div class="fc-t">AI Score</div><div class="fc-v">9.2/10</div></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Features -->
+<section class="features" id="features">
+<div class="container">
+<div class="sec-hd">
+<span class="tag">Features</span>
+<h2 class="h2">Powerful Features for Smart Investing</h2>
+<p class="sub">Everything you need to build wealth through daily SIP mutual fund investments, powered by cutting-edge AI technology.</p>
+</div>
+<div class="feat-grid">
+<div class="feat">
+<div class="feat-ic">&#129302;</div>
+<h3>AI-Powered Recommendations</h3>
+<p>Our advanced AI analyzes thousands of mutual funds, market trends, and your risk profile to recommend the perfect portfolio. Get personalized fund suggestions that adapt as market conditions change, ensuring your investments always stay optimized for maximum growth potential.</p>
+</div>
+<div class="feat">
+<div class="feat-ic">&#9889;</div>
+<h3>Daily Automated SIP</h3>
+<p>Set up once and let WealthUpp handle the rest. Our automated daily SIP system invests your chosen amount every day without any manual intervention. Benefit from superior rupee cost averaging compared to monthly SIPs, as daily investments spread your entry points across more market levels.</p>
+</div>
+<div class="feat">
+<div class="feat-ic">&#128176;</div>
+<h3>Zero Commission</h3>
+<p>Keep 100% of your returns. WealthUpp charges absolutely no commission on your investments, unlike traditional platforms that eat into your profits. Every rupee you invest goes directly into your chosen mutual funds, maximizing your wealth creation over the long term.</p>
+</div>
+<div class="feat">
+<div class="feat-ic">&#128202;</div>
+<h3>Smart Portfolio Tracking</h3>
+<p>Monitor your investments in real-time with our intuitive dashboard. Track daily returns, annualized performance, asset allocation, and XIRR with beautiful visualizations. Get instant notifications on portfolio milestones and AI-driven rebalancing suggestions to keep your investments on track.</p>
+</div>
+<div class="feat">
+<div class="feat-ic">&#128274;</div>
+<h3>Bank-Grade Security</h3>
+<p>Your data and money are protected with 256-bit encryption, two-factor authentication, and SEBI-mandated security protocols. We never store your banking credentials and all transactions are processed through RBI-approved payment gateways for complete peace of mind.</p>
+</div>
+<div class="feat">
+<div class="feat-ic">&#127891;</div>
+<h3>Goal-Based Investing</h3>
+<p>Invest with purpose using our goal-based planning feature. Whether it's retirement, children's education, buying a home, or building an emergency fund, WealthUpp creates customized investment strategies with clear milestones, projected outcomes, and AI-adjusted recommendations.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How It Works -->
+<section class="how" id="how">
+<div class="container">
+<div class="sec-hd">
+<span class="tag">How It Works</span>
+<h2 class="h2">Start Investing in 3 Simple Steps</h2>
+<p class="sub">Getting started with WealthUpp's daily SIP platform takes less than 5 minutes. No paperwork, no hassle.</p>
+</div>
+<div class="steps">
+<div class="step">
+<div class="step-n">1</div>
+<div class="step-ic">&#128100;</div>
+<h3>Sign Up &amp; Complete KYC</h3>
+<p>Create your WealthUpp account in under 2 minutes with just your PAN card and Aadhaar. Our fully digital KYC process is paperless and instant, so you can start investing right away. No branch visits, no document uploads, no waiting periods.</p>
+</div>
+<div class="conn"><svg width="60" height="20" viewBox="0 0 60 20"><path d="M0,10 L50,10" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4"/><polygon points="50,5 60,10 50,15" fill="#f59e0b"/></svg></div>
+<div class="step">
+<div class="step-n">2</div>
+<div class="step-ic">&#129302;</div>
+<h3>Set Your Daily SIP Amount</h3>
+<p>Choose how much you want to invest daily, starting from as low as Rs. 100. Our AI analyzes your financial profile and recommends the ideal mutual fund portfolio. You can also pick your own funds from our curated selection of top-performing schemes across all categories.</p>
+</div>
+<div class="conn"><svg width="60" height="20" viewBox="0 0 60 20"><path d="M0,10 L50,10" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4"/><polygon points="50,5 60,10 50,15" fill="#f59e0b"/></svg></div>
+<div class="step">
+<div class="step-n">3</div>
+<div class="step-ic">&#128200;</div>
+<h3>Watch Your Wealth Grow</h3>
+<p>Sit back and let WealthUpp's AI optimize your investments daily. Track performance in real-time, receive smart rebalancing alerts, and watch compounding work its magic. Our platform automatically adjusts to market conditions to maximize your returns over the long term.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Benefits -->
+<section class="benefits" id="benefits">
+<div class="container">
+<div class="ben-grid">
+<div>
+<span class="tag">Why Daily SIP?</span>
+<h2 class="h2">Daily SIP Beats Monthly SIP Every Time</h2>
+<p class="txt">Daily SIP investing offers superior rupee cost averaging compared to monthly SIPs. By investing every day instead of once a month, you spread your investments across 30 times more market price points, significantly reducing the impact of market volatility on your portfolio.</p>
+<div class="ben-list">
+<div class="ben-item">
+<div class="ben-ic">&#10003;</div>
+<div><h4>Better Rupee Cost Averaging</h4><p>Invest at 30+ price points per month instead of just one, smoothing out market fluctuations and reducing average purchase cost over time.</p></div>
+</div>
+<div class="ben-item">
+<div class="ben-ic">&#10003;</div>
+<div><h4>No Market Timing Stress</h4><p>Daily investing eliminates the anxiety of choosing the right day to invest. Your money flows in consistently regardless of market highs or lows.</p></div>
+</div>
+<div class="ben-item">
+<div class="ben-ic">&#10003;</div>
+<div><h4>Power of Compounding</h4><p>More frequent investments mean your returns start compounding earlier. Over 10+ years, daily SIPs can generate significantly higher corpus than monthly SIPs of the same total amount.</p></div>
+</div>
+<div class="ben-item">
+<div class="ben-ic">&#10003;</div>
+<div><h4>Disciplined Wealth Building</h4><p>Daily auto-debits build an unbreakable investment habit. Small daily amounts feel effortless while delivering powerful long-term results through consistency and discipline.</p></div>
+</div>
+</div>
+</div>
+<div class="ben-vis">
+<div class="cmp">
+<div class="cmp-card m">
+<h4>Monthly SIP</h4>
+<div class="cmp-chart"><div class="bar" style="height:60%;left:50%"></div></div>
+<p>1 price point/month</p>
+<span class="cmp-amt">&#8377;24.3L returns</span>
+</div>
+<div class="cmp-card d">
+<h4>Daily SIP</h4>
+<div class="cmp-chart">
+<div class="bar" style="height:80%;left:10%"></div>
+<div class="bar" style="height:65%;left:25%"></div>
+<div class="bar" style="height:90%;left:40%"></div>
+<div class="bar" style="height:55%;left:55%"></div>
+<div class="bar" style="height:75%;left:70%"></div>
+<div class="bar" style="height:85%;left:85%"></div>
+</div>
+<p>30+ price points/month</p>
+<span class="cmp-amt">&#8377;26.8L returns</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="testi" id="testimonials">
+<div class="container">
+<div class="sec-hd">
+<span class="tag">Testimonials</span>
+<h2 class="h2">What Our Investors Say</h2>
+<p class="sub">Join thousands of happy investors who are building wealth with WealthUpp's daily SIP platform.</p>
+</div>
+<div class="testi-grid">
+<div class="tcard">
+<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p>"WealthUpp completely changed my approach to investing. The daily SIP feature is brilliant - I don't even notice the small daily amounts, but my portfolio has grown significantly in just 8 months. The AI recommendations are spot on!"</p>
+<div class="tauth"><div class="tav" style="background:#f59e0b">R</div><div><strong>Rajesh Kumar</strong><span>Software Engineer, Bangalore</span></div></div>
+</div>
+<div class="tcard">
+<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p>"As a working professional, I never had time to track markets. WealthUpp's AI does it all for me. My daily SIP runs automatically, and the portfolio tracking dashboard gives me complete visibility. Zero commission is the cherry on top!"</p>
+<div class="tauth"><div class="tav" style="background:#3b82f6">P</div><div><strong>Priya Sharma</strong><span>Marketing Manager, Mumbai</span></div></div>
+</div>
+<div class="tcard">
+<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p>"I started with just Rs. 200 per day and already seeing great returns. The goal-based investing feature helped me plan for my daughter's education. WealthUpp makes mutual fund investing so simple and accessible for everyone."</p>
+<div class="tauth"><div class="tav" style="background:#10b981">S</div><div><strong>Suresh Patel</strong><span>Business Owner, Hyderabad</span></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container">
+<div class="cta-in">
+<h2>Ready to Build Wealth Every Day?</h2>
+<p>Join 50,000+ smart investors who trust WealthUpp for their daily SIP mutual fund investments. Start with as little as Rs. 100/day and let AI grow your money.</p>
+<div class="cta-btns"><a href="https://wealthupp.com/daily-sip" class="btn btn-p" target="_blank" rel="noopener">Start Your Daily SIP Now</a></div>
+<div class="cta-apps">
+<span>Available on</span>
+<a href="https://play.google.com/store/apps/details?id=com.wealthupp" target="_blank" rel="noopener" class="app-lk">Google Play</a>
+<a href="https://apps.apple.com/in/app/wealthupp" target="_blank" rel="noopener" class="app-lk">App Store</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+<div class="container">
+<div class="sec-hd">
+<span class="tag">Contact Us</span>
+<h2 class="h2">Get in Touch</h2>
+</div>
+<div class="con-grid">
+<div class="con-info">
+<div class="con-item"><div class="con-ic">&#128205;</div><div><h4>Office Address</h4><p>3rd Floor, Challa Annex, Srinagar,<br>Hyderabad - 500003, Telangana, India</p></div></div>
+<div class="con-item"><div class="con-ic">&#128222;</div><div><h4>Phone</h4><p><a href="tel:+919398809666">+91 9398809666</a></p></div></div>
+<div class="con-item"><div class="con-ic">&#128231;</div><div><h4>Email</h4><p><a href="mailto:support@wealthupp.com">support@wealthupp.com</a></p></div></div>
+</div>
+<div class="con-soc">
+<h4>Follow Us</h4>
+<div class="soc-links">
+<a href="https://twitter.com/WealthUpp" target="_blank" rel="noopener" class="soc-lk" aria-label="Twitter">&#120143;</a>
+<a href="https://instagram.com/wealthupp" target="_blank" rel="noopener" class="soc-lk" aria-label="Instagram">&#128247;</a>
+<a href="https://linkedin.com/company/wealthupp" target="_blank" rel="noopener" class="soc-lk" aria-label="LinkedIn">in</a>
+<a href="https://youtube.com/@WealthUpp" target="_blank" rel="noopener" class="soc-lk" aria-label="YouTube">&#9654;</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="ft-grid">
+<div class="ft-brand">
+<img src="https://wealthupp.com/assets/logo_dark.png.webp" alt="WealthUpp" width="140" height="35">
+<p>India's most trusted AI-powered daily SIP mutual fund investment platform. Build wealth every day with zero commission and smart AI recommendations.</p>
+</div>
+<div class="ft-links"><h4>Quick Links</h4><ul><li><a href="#about">About Us</a></li><li><a href="#features">Features</a></li><li><a href="#how">How It Works</a></li><li><a href="#benefits">Benefits</a></li><li><a href="#testimonials">Testimonials</a></li></ul></div>
+<div class="ft-links"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Disclaimer</a></li><li><a href="#">Refund Policy</a></li></ul></div>
+<div class="ft-links"><h4>Download App</h4><ul><li><a href="https://play.google.com/store/apps/details?id=com.wealthupp" target="_blank" rel="noopener">Google Play Store</a></li><li><a href="https://apps.apple.com/in/app/wealthupp" target="_blank" rel="noopener">Apple App Store</a></li></ul></div>
+</div>
+<div class="ft-btm">
+<p>&copy; 2024 WealthUpp. All rights reserved. | Founded by Ram Tulluri</p>
+<p class="ft-discl">Mutual fund investments are subject to market risks. Read all scheme-related documents carefully before investing.</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
